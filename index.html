@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="myApp">
+
+  <head>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+  </head>
+
+  <body ng-controller="myCtrl" >
+    <div >
+      <h1>{{firstName}}</h1>
+    </div>
+    <div ng-controller="myApiCtrl">
+      <table>
+        <tr>
+          <td>{{user.id}}</td>
+          <td>{{user.location}}</td>
+        </tr>
+        <tr>
+          <td>{{user.html_url}}</td>
+          <td><img src="{{user.avatar_url}}" height="50px" width="50px"/></td>
+        </tr>
+      </table>
+     
+      
+    </div>
+    <div ng-controller="customersCtrl">
+     <table ng-repeat="x in names" style="border:1px solid ">
+         <td>{{ x.Name }}</td>
+         <td>{{ x.Country }}</td>
+      </table>
+      </div>
+  </body>
+
+</html>
