@@ -1,0 +1,2004 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800)
+
+
+
+// /* ##### GENERAL  #####
+  outline: 0
+  padding: 0
+  margin: 0
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+body
+  background: #fff
+  color: #60606e
+  font-family: "Open sans", sans-serif
+  font-size: 16px
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  overflow-x: hidden
+
+section
+  padding-top: 0.1px
+
+.green-section
+  background-color: #1abc9c
+
+.white-section
+  background: none repeat scroll 0 0 #fff
+  padding-top: 30px
+  padding-bottom: 30px
+
+.light-gray-section
+  background-color: #efeff0
+
+.vm-footer-bottom
+  margin-bottom: 0px!important
+  float: left
+
+#error-page
+  margin-top: 100px
+
+.vm-spinner
+  margin-left: -47px
+  margin-top: 34px
+  color: #1abc9c
+
+#mapid
+  height: 582px!important
+
+.vm_form
+  margin-bottom: 10px
+
+.formly.row
+  display: block
+
+.form-control
+  height: 40px
+  padding: 10px 20px!important
+  border: 2px solid #ccc
+
+.form-control:focus
+  border-color: #1abc9c!important
+
+.validation 
+  position: absolute
+  font-size: .8em
+  color: #a94442
+
+.formly-template-wrapper 
+  position: relative
+
+.vm_textjustify
+  text-align: justify
+
+.vm_loginbg
+  background-color: rgba(0, 0, 0, 0.7)
+  background-attachment: fixed
+  width: 100%
+  height: 100%
+  position: fixed
+  overflow: auto
+  z-index: 1000000
+
+.vm_popup
+  padding: 30px 80px
+  margin-top: 7%
+  min-width: 500px
+  width: 100px
+  background-color: white
+  margin-left: 34%
+  border-radius: 10px
+
+.vm_remember
+  float: left
+  color: #333
+
+.vm_forgot
+  float: right
+  color: #333
+
+.vm_loginbtn
+  width: 100%!important
+  margin: 5px 0!important
+
+.vm_fbbtn
+  margin: 5px!important
+  background: #3b5998!important
+
+.vm_googlebtn
+  margin: 5px!important
+  background: #ea4335!important
+
+.vm_signupbtn
+  width: 100%!important
+  margin: 5px 0!important
+
+img
+  width: 100%
+
+blockquote.bq
+  padding: 30px
+  border-left: solid 10px #1abc9c
+  font-style: italic
+  font-size: 14px
+  line-height: 30px
+  color: #999999
+  background-color: #efeff0
+
+a
+  color: #fff
+  -webkit-transition: all .2s ease-in-out
+  transition: all .2s ease-in-out
+  &.link
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      bottom: -10px
+      left: 0
+      width: 0
+      height: 1px
+      background-color: #1abc9c
+      -webkit-transition: all .2s ease-in-out
+      transition: all .2s ease-in-out
+  &:hover, &:focus
+    color: #1abc9c
+    text-decoration: none
+  &:hover:after
+    width: 50%
+
+// texts
+
+.montserrat-text
+  font-family: "Montserrat", sans-serif
+  font-weight: 700
+
+.open-sans-text
+  font-family: "Open sans", sans-serif
+
+.white-text
+  color: white
+
+.green-text
+  color: #1abc9c
+
+.gray-text
+  color: #999999
+
+.uppercase
+  text-transform: uppercase
+
+.italic
+  font-style: italic
+
+p
+  font-family: "Open sans", sans-serif
+  color: #999999
+  line-height: 30px
+
+ul.social-icons li a:hover
+  color: #1abc9c
+
+// section's title
+
+.section-title
+  width: 74%
+  margin: 0 auto 100px
+  text-align: center
+  span
+    position: relative
+    z-index: 1
+    font-family: "Montserrat", sans-serif
+    font-weight: 700
+    font-size: 25px
+    text-transform: uppercase
+    position: relative
+    display: inline-block
+    margin-bottom: 30px
+  
+
+.section-title1 span
+  position: relative
+  z-index: 1
+  font-family: "Montserrat", sans-serif
+  font-weight: 700
+  font-size: 25px
+  text-transform: uppercase
+  position: relative
+  display: inline-block
+  margin-bottom: 20px
+  padding-top: 10px
+  
+
+.section-title p
+  line-height: 30px
+  color: #60606e
+  text-align: justify
+
+@media (max-width: 991px)
+  .section-title
+    margin: 0 auto 50px
+   
+// /*lists
+// /*list 1
+
+ul
+  &.list li
+    list-style: none
+    position: relative
+    padding-left: 20px
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+    &:before
+      font-family: "Ionicons"
+      content: '\f374'
+      position: absolute
+      left: 0
+      color: #1abc9c
+  &.list_2 li
+    list-style: none
+    float: left
+    width: 100%
+    a
+      display: inline-block
+      padding: 20px
+      border-bottom: solid 1px #bfbfbf
+      width: 100%
+      -webkit-transition: all .2s ease-in-out
+      transition: all .2s ease-in-out
+    &:first-child a
+      border-top: solid 1px #bfbfbf
+    a
+      > span
+        float: right
+      &:hover
+        border-bottom: solid 1px #1abc9c
+  &.tags
+    float: left
+    li
+      list-style: none
+      margin-right: 5px
+      margin-bottom: 5px
+      float: left
+      a
+        display: inline-block
+        height: 30px
+        line-height: 30px
+        color: #999999
+        background-color: #e5e5e5
+        padding: 0 15px
+        font-family: "Montserrat", sans-serif
+        font-size: 12px
+        font-weight: 700
+        text-transform: uppercase
+        &:hover
+          background-color: #f2f2f2
+          color: #1abc9c
+  &.social-icons li
+    list-style: none
+    float: left
+    margin: 0 10px
+    &:first-child
+      margin: 0 10px 0 0
+    &:last-child
+      margin: 0 0 0 10px
+    a
+      color: #999999
+      font-size: 18px
+
+// /*list 2
+
+// /*list 3 (tags)
+
+// /*social icons
+
+// /*buttons
+
+.btn
+  height: 50px
+  line-height: 50px
+  min-width: 150px
+  text-align: center
+  font-family: "Montserrat", sans-serif
+  font-weight: 700
+  text-transform: uppercase
+  border-radius: 0
+  padding: 0
+  -webkit-transition: all .2s ease-in-out
+  transition: all .2s ease-in-out
+  &:hover
+    -webkit-transform: scale(1.01)
+    -ms-transform: scale(1.01)
+    transform: scale(1.01)
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+  &.green
+    background-color: #1abc9c
+    color: #fff
+  &.white
+    background-color: #fff
+    color: #1abc9c
+
+@media (max-width: 991px)
+  .btn
+    margin: 20px 0
+
+// /*tab menu
+
+.tab
+  overflow: hidden
+  float: left
+  nav
+    width: 100%
+    display: inline-block
+    float: left
+    border-bottom: solid 2px #e6e6e6
+    margin-bottom: 30px
+    position: relative
+    .bottom-line
+      height: 2px
+      background-color: #1abc9c
+      position: absolute
+      bottom: -2px
+      left: 0
+      -webkit-transition: all .2s ease-in-out
+      transition: all .2s ease-in-out
+    a
+      font-family: "Montserrat", sans-serif
+      font-size: 12px
+      font-weight: 700
+      text-transform: uppercase
+      padding: 0 10px 20px
+      color: #999999
+      display: inline-block
+      -webkit-transition: all .2s ease-in-out
+      transition: all .2s ease-in-out
+      position: relative
+      &.current
+        color: #60606e
+  .tab_single
+    display: none
+    &.shown
+      display: block
+
+// /* ##### 01 : HEADER & FOOTER  #####
+// /*header
+
+header.main-header
+  height: 100px
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 9
+  .logo
+    float: left
+    height: 100px
+    line-height: 100px
+
+// /*logo
+
+.menu
+  float: right
+
+// /*desktop nav
+
+nav
+  &.desktop-nav
+    float: left
+    li
+      list-style: none
+    ul.first-level > li
+      float: left
+      margin-right: 20px
+      position: relative
+      &:last-child
+        margin-right: 0
+      > a
+        display: inline-block
+        line-height: 100px
+        position: relative
+        -webkit-transition: none
+        transition: none
+        &:after
+          content: ""
+          position: absolute
+          top: 50px
+          left: 0
+          width: 50%
+          height: 1px
+          background-color: #1abc9c
+          text-shadow: 0px 0px 9px rgba(43, 46, 0, 0.27)
+          opacity: 0
+          -webkit-transition: all .2s ease-in-out
+          transition: all .2s ease-in-out
+      &:hover > a:after
+        top: 35px
+        opacity: 1
+      a
+        text-transform: uppercase
+        font-family: "Montserrat", sans-serif
+        font-size: 12px
+        font-weight: 700
+      > ul.second-level
+        display: none
+        z-index: 999
+        position: absolute
+        top: 70px
+        left: 0
+        min-width: 200px
+        background-color: #60606e
+      &:last-child > ul.second-level
+        left: auto
+        right: 0
+      > ul.second-level > li
+        > a
+          display: inline-block
+          width: 100%
+          height: 40px
+          line-height: 40px
+          padding: 0 20px
+          color: #fff
+        &:nth-child(even) > a
+          background-color: #585866
+        > a:hover
+          background-color: #404051
+  &.mobile-nav
+    display: inline-block
+    min-width: 100%
+    background-color: #1abc9c
+    box-shadow: 0px 5px 18px 0px rgba(43, 46, 0, 0.53)
+    position: absolute
+    right: 0
+    top: 100px
+    display: none
+    > ul.first-level
+      li
+        list-style: none
+      > li
+        a
+          display: inline-block
+          text-decoration: none
+          width: 100%
+          height: 40px
+          line-height: 40px
+          text-align: center
+          color: white
+          font-family: "Montserrat", sans-serif
+          font-weight: 700
+          text-transform: uppercase
+          font-size: 12px
+          &:hover
+            background-color: #90980a
+        > ul.second-level
+          display: none
+          background-color: #50505f
+
+@media (max-width: 991px)
+  .menu nav.desktop-nav
+    display: none
+
+// /*mobile nav
+
+// /*menu icon
+
+header.main-header .menu-icon
+  float: left
+  cursor: pointer
+  margin-top: 41.5px
+  // /* (100 - 17) / 2 (17px is the icon's height)
+  display: none
+  .line
+    height: 1px
+    width: 30px
+    background-color: #1abc9c
+    -webkit-transition: all .2s ease-in-out
+    transition: all .2s ease-in-out
+    &:nth-child(2)
+      margin: 7px 0
+      width: 15px
+    &:last-child
+      width: 20px
+
+@media (max-width: 991px)
+  header.main-header .menu-icon
+    display: block
+
+// /*footer
+
+footer.main-footer
+  padding: 25px 0
+  font-size: 12px
+  nav.footer-nav ul
+    padding: 0
+    margin: 0
+    li
+      list-style: none
+      float: left
+      margin: 0 20px
+      padding: 0
+
+ul li i
+  color: #60606e
+  &:hover
+    color: #1abc9c
+
+footer.main-footer nav.footer-nav ul li
+  &:first-child
+    margin: 0 20px 0 0
+  a
+    text-transform: uppercase
+    color: #9a9a9a
+
+@media (max-width: 991px)
+  footer.main-footer
+    *
+      text-align: center
+    ul.social-icons
+      width: 100%
+      li
+        margin: 0
+        width: -webkit-calc(100% / 6)
+        width: calc(100% / 6)
+    nav.footer-nav ul li
+      text-align: center
+      width: 100%
+      margin-left: 0
+      margin-bottom: 20px
+      &:first-child
+        margin-left: 0
+        margin-bottom: 20px
+    .align-left
+      text-align: center
+.align-left
+  text-align: right
+// /* ##### 02 : SITE HEROS  #####
+// /*site hero 1
+
+.site-hero
+  height: 730px
+  width: 100%
+  background-size: cover
+  position: relative
+  overflow: hidden
+  ul.slides
+    height: 450px
+    // /* 850 - 400
+    width: 100%
+    position: absolute
+    top: 100px
+    li
+      opacity: 0
+      text-align: center
+      position: absolute
+      top: 70%
+      left: 50%
+      -webkit-transform: translate(-50%, -50%)
+      -ms-transform: translate(-50%, -50%)
+      transform: translate(-50%, -50%)
+  .small-title
+    color: #1abc9c
+    padding: 7px 12px
+    background-color: #fff
+    display: inline-block
+  .big-title
+    font-size: 45px
+    color: #1abc9c
+    padding: 10px 40px
+    border: solid 10px #fff
+    display: inline-block
+    margin: 0px 5px 30px 5px
+  p
+    width: 50%
+    margin: 0 auto
+    color: #fff
+
+// /*site hero 1
+
+.site-hero_1, .site-hero_2, .site-hero_3, .site-hero_4, .site-hero_5, .site-hero_6
+  background-size: cover
+  height: 300px
+  width: 100%
+  position: fixed
+  z-index: -1000
+  .page-title
+    position: absolute
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    text-align: center
+    .big-title
+      font-size: 36px
+    .small-title
+      font-size: 14px
+
+.agency
+  width: 100%
+  height: auto
+  margin-top: 50px
+  img
+    max-height: auto
+  p
+    color: #60606e
+  .section-title
+    text-align: left
+    width: 100%
+    margin: 0 auto 30px
+
+@media (max-width: 991px)
+  .site-hero ul.slides
+    height: 380px
+  .agency
+    margin-top: 30px
+    img
+      margin-bottom: 30px
+    .section-title
+      margin: 0 auto
+      text-align: center
+    p
+      text-align: center
+
+// /* ##### 03 : SERVICES  #####
+
+.services .services-left
+  i.icon
+    display: block
+    font-size: 36px
+  .service-title
+    font-size: 18px
+    margin-bottom: 20px
+    display: inline-block
+  ul li
+    list-style: none
+    text-transform: uppercase
+    line-height: 30px
+    color: #999999
+
+@media (max-width: 991px)
+  .services .services-left
+    text-align: center
+    margin-bottom: 50px
+
+// /* ##### 04 : PORTFOLIO  #####
+
+.portfolio .categories-grid
+  span
+    font-size: 30px
+    margin-bottom: 50px
+    display: inline-block
+  .categories ul li
+    list-style: none
+    margin: 20px 0
+    a
+      display: inline-block
+      font-family: "Montserrat", sans-serif
+      font-weight: 700
+      text-transform: uppercase
+      color: #60606e
+      margin-left: 20px
+      &.active
+        margin-left: 0
+        background-color: #1abc9c
+        padding: 0 10px
+        color: white
+
+@media (max-width: 991px)
+  .portfolio .categories-grid
+    span
+      margin-bottom: 0
+      text-align: center
+      width: 100%
+    .categories ul li
+      text-align: center
+      a
+        margin-left: 0
+
+.portfolio_item
+  position: relative
+  overflow: hidden
+  margin-bottom: 30px
+  display: inline-block
+  .portfolio_item_hover
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(255, 255, 255, 0.8)
+    -webkit-transform: translateX(-100%)
+    -ms-transform: translateX(-100%)
+    transform: translateX(-100%)
+    opacity: 0
+    -webkit-transition: all .2s ease-in-out
+    transition: all .2s ease-in-out
+    .item_info
+      text-align: center
+      position: absolute
+      top: 50%
+      left: 50%
+      -webkit-transform: translate(-50%, -50%)
+      -ms-transform: translate(-50%, -50%)
+      transform: translate(-50%, -50%)
+      span
+        display: inline-block
+        font-family: "Montserrat", sans-serif
+        font-weight: 700
+        text-transform: uppercase
+        color: #60606e
+        font-size: 18px
+        -webkit-transform: translateY(20px)
+        -ms-transform: translateY(20px)
+        transform: translateY(20px)
+        -webkit-transition: all .5s ease-in-out .3s
+        transition: all .5s ease-in-out .3s
+        opacity: 0
+      em
+        font-style: normal
+        font-weight: 700
+        display: inline-block
+        background-color: #1abc9c
+        padding: 5px
+        color: white
+        margin-top: 5px
+        -webkit-transform: translateY(20px)
+        -ms-transform: translateY(20px)
+        transform: translateY(20px)
+        -webkit-transition: all .5s ease-in-out .5s
+        transition: all .5s ease-in-out .5s
+        opacity: 0
+  &:hover
+    .portfolio_item_hover
+      opacity: 1
+      -webkit-transform: translateY(0)
+      -ms-transform: translateY(0)
+      transform: translateY(0)
+    .item_info
+      em, span
+        opacity: 1
+        -webkit-transform: translateY(0)
+        -ms-transform: translateY(0)
+        transform: translateY(0)
+
+// /*single project
+
+.project_images, .related_projects
+  float: left
+
+.pages_pagination
+  width: 100%
+  height: 50px
+  line-height: 50px
+  float: left
+  text-align: right
+  font-size: 24px
+  margin: 50px 0
+  .all
+    float: left
+  > a
+    display: inline-block
+    height: 100%
+    width: 50px
+    text-align: center
+    &:hover
+      background-color: #1abc9c
+      color: white
+
+@media (max-width: 991px)
+  .related_projects img
+    margin-bottom: 30px
+
+  #mapid
+    height: 440px!important
+
+  .site-hero 
+    height: 556px
+    
+  .vm-contact
+    padding: 50px 0px!important
+
+  .form-control
+    margin-left: 17px
+    width: 90%
+
+  .vm_btnalign
+    margin-left: 20px
+
+  .message 
+    margin-left: 17px!important
+
+// /* ##### 05 : INPUTS & TEXTAREAS STYLES  #####
+// /*textarea 1
+
+.textarea_1
+  height: 200px
+  width: 100%
+  border: solid 1px rgba(0, 0, 0, 0.1)
+  position: relative
+  textarea
+    height: 100%
+    width: 100%
+    border: 0
+    padding: 20px
+    background-color: transparent
+    float: left
+    z-index: 2
+    font-family: "Montserrat", sans-serif
+    font-size: 14px
+    color: #9a9a9a
+  > span
+    position: absolute
+    top: 20px
+    left: 20px
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    font-family: "Montserrat", sans-serif
+    font-weight: 700
+    font-size: 12px
+    text-transform: uppercase
+    color: #cdcdcd
+    -webkit-transition: all .2s ease-in-out
+    transition: all .2s ease-in-out
+    z-index: 1
+
+// /*input 1
+
+.input_1
+  height: 50px
+  width: 100%
+  border: solid 1px rgba(0, 0, 0, 0.1)
+  position: relative
+  input[type="text"]
+    height: 100%
+    width: 100%
+    border: 0
+    padding: 0 20px
+    float: left
+    position: relative
+    background-color: transparent
+    z-index: 2
+    font-family: "Montserrat", sans-serif
+    font-size: 14px
+    color: #9a9a9a
+  input[type="email"]
+    height: 100%
+    width: 100%
+    border: 0
+    padding: 0 20px
+    float: left
+    position: relative
+    background-color: transparent
+    z-index: 2
+    font-family: "Montserrat", sans-serif
+    font-size: 14px
+    color: #9a9a9a
+  > span
+    position: absolute
+    top: 50%
+    left: 20px
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    font-family: "Montserrat", sans-serif
+    font-weight: 700
+    font-size: 12px
+    text-transform: uppercase
+    color: #cdcdcd
+    -webkit-transition: all .2s ease-in-out
+    transition: all .2s ease-in-out
+    z-index: 1
+    &.active
+      color: #1abc9c
+      font-size: 10px
+      top: 0px
+      left: 5px
+      background-color: #fff
+      padding: 5px
+
+.textarea_1 > span.active
+  color: #1abc9c
+  font-size: 10px
+  top: 0px
+  left: 5px
+  background-color: #fff
+  padding: 5px
+
+.email > span.active
+  color: #1abc9c
+  font-size: 10px
+  top: 0px
+  left: 5px
+  background-color: #fff
+  padding: 5px
+
+// /*input 2
+
+.input_2
+  width: 100%
+  height: 40px
+  background-color: #ececec
+  position: relative
+  >
+    input
+      height: 100%
+      width: -webkit-calc(100% - 40px)
+      width: calc(100% - 40px)
+      border: 0
+      background-color: transparent
+      padding: 0 20px
+      font-family: "Montserrat", sans-serif
+      font-size: 12px
+      text-transform: uppercase
+      float: left
+      -webkit-transition: all .2s ease-in-out
+      transition: all .2s ease-in-out
+    button
+      height: 100%
+      width: 40px
+      border: 0
+      background-color: transparent
+    input:focus
+      background-color: #f2f2f2
+
+// /* ##### 06 : BENEFITS STYLES  #####
+// /*benefits 1
+
+.benefits_1_single
+  width: 100%
+  text-align: center
+  >
+    i
+      display: inline-block
+      height: 60px
+      width: 60px
+      line-height: 40px
+      text-align: center
+      color: #1abc9c
+      font-size: 55px
+      margin-bottom: 20px
+    .title
+      font-size: 18px
+
+// /*benefits 2
+
+.benefits_2_single
+  margin-bottom: 30px
+  &:nth-last-child(-n+3)
+    margin-bottom: 30px
+  >
+    i
+      display: inline-block
+      background-color: #1abc9c
+      height: 40px
+      width: 40px
+      line-height: 40px
+      text-align: center
+      color: white
+      font-size: 30px
+      margin-right: 2px
+    .title
+      display: inline-block
+      height: 40px
+      line-height: 30px
+      color: #60606e
+
+// /* ##### 07 : PRICING PLANS STYLES  #####
+
+.pricing_plan
+  padding: 30px
+  border-top: solid 5px #1abc9c
+  position: relative
+  -webkit-transition: all .2s ease-in-out
+  transition: all .2s ease-in-out
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    width: 0
+    height: 0
+    border-left: 10px solid transparent
+    border-right: 0px solid transparent
+    border-top: 10px solid #1abc9c
+  &:hover
+    -webkit-transform: scale(1.01)
+    -ms-transform: scale(1.01)
+    transform: scale(1.01)
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2)
+  .plan_title
+    font-size: 30px
+  .plan_price
+    background-color: #1abc9c
+    padding: 5px 20px
+    color: white
+    font-size: 14px
+    display: inline-block
+  ul
+    margin: 50px 0
+
+// /* ##### 08 : TEAM STYLES  #####
+
+.team_member
+  margin-bottom: 30px
+  position: relative
+  overflow: hidden
+  .team_member_hover
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(255, 255, 255, 0.8)
+    padding: 20px
+    opacity: 0
+    -webkit-transition: all .2s ease-in-out
+    transition: all .2s ease-in-out
+    .team_member_info
+      width: 100%
+      .team_member_name
+        display: inline-block
+        margin-top: 10px
+        margin-bottom: 10px
+        background-color: #1abc9c
+        padding: 5px
+        font-family: "Montserrat", sans-serif
+        font-weight: 700
+        font-size: 12px
+        text-transform: uppercase
+        color: white
+        -webkit-transition: all .2s ease-in-out .2s
+        transition: all .2s ease-in-out .2s
+        -webkit-transform: translateY(20px)
+        -ms-transform: translateY(20px)
+        transform: translateY(20px)
+        opacity: 0
+      .team_member_job
+        font-family: "Montserrat", sans-serif
+        font-weight: 700
+        font-size: 12px
+        text-transform: uppercase
+        color: #60606e
+        -webkit-transition: all .2s ease-in-out .3s
+        transition: all .2s ease-in-out .3s
+        -webkit-transform: translateY(20px)
+        -ms-transform: translateY(20px)
+        transform: translateY(20px)
+        opacity: 0
+        padding: 0px
+        text-align: justify
+.team_member:hover
+  .team_member_hover
+    opacity: 1
+    cursor: crosshair
+  .team_member_info
+    .team_member_name, .team_member_job
+      -webkit-transform: translateY(0)
+      -ms-transform: translateY(0)
+      transform: translateY(0)
+      opacity: 1
+
+// /* ##### 09 : TESTIMONIALS STYLES  #####
+
+.testimonials
+  position: relative
+  float: left
+
+.testimonials_single
+  width: 100%
+  text-align: center
+  .author_pic
+    height: 80px
+    width: 80px
+    border-radius: 50%
+    overflow: hidden
+    margin: 0 auto
+  p
+    margin: 30px 0
+  .author_name
+    padding: 7px
+    background-color: #1abc9c
+    color: white
+    font-family: "Montserrat", sans-serif
+    text-transform: uppercase
+    display: inline-block
+
+// /* ##### 10 : CLIENTS STYLES  #####
+
+.clients_single
+  border: solid 1px rgba(0, 0, 0, 0.1)
+  padding: 20px
+  overflow: hidden
+  text-align: center
+
+.clients div[class^="col"]
+  margin-bottom: 30px
+  &:nth-last-child(-n+3)
+    margin-bottom: 0
+
+@media (max-width: 767px)
+  .clients div[class^="col"]
+    &:first-child
+      margin-top: 30px
+    &:nth-last-child(-n+3)
+      margin-bottom: 30px
+
+@media (min-width: 768px) and (max-width: 991px)
+  .clients div[class^="col"]
+    &:first-child
+      margin-top: 30px
+    &:nth-last-child(-n+3)
+      margin-bottom: 30px
+
+.clients_single
+  img
+    max-width: 100%
+    max-height: 100px
+    opacity: .5
+    -webkit-transition: all .2s ease-in-out
+    transition: all .2s ease-in-out
+  &:hover img
+    opacity: 1
+
+// /* ##### 11 : BLOG STYLES  #####
+// /*blog posts
+
+.blog_post
+  margin-bottom: 100px
+
+.post_media
+  margin-bottom: 30px
+  *
+    width: 100%
+    max-height: 500px
+
+.post_title
+  margin-bottom: 20px
+  span.post_date
+    font-size: 11px
+    font-family: "Montserrat", sans-serif
+    text-transform: uppercase
+    background-color: #1abc9c
+    padding: 5px
+    color: white
+
+.post_info
+  margin-bottom: 20px
+  .post_date
+    background-color: #1abc9c
+    height: 30px
+    line-height: 30px
+    padding: 0 15px
+    color: white
+    float: left
+    margin-right: 15px
+  >
+    *
+      line-height: 30px
+    i
+      color: #cccccc
+      font-size: 18px
+      margin-right: 5px
+    span
+      color: #cccccc
+      font-family: "Montserrat", sans-serif
+      font-size: 14px
+      margin-right: 20px
+
+.blog_post > a
+  display: inline-block
+  margin-top: 10px
+
+// /*masonry blog posts
+
+.blog_post_masonry
+  width: 100%
+  margin-bottom: 50px
+  .post_media
+    margin-bottom: 0
+  .post_info
+    margin: 10px 0
+  .post_date
+    display: block
+    width: 100%
+
+// /*sidebar
+@media (max-width: 991px)
+  .sidebar
+    margin-top: 100px
+
+.sidebar
+  float: left
+  .widget
+    margin-bottom: 50px
+    width: 100%
+    float: left
+    &:last-child
+      margin-bottom: 0
+    .widget_title
+      font-size: 14px
+      font-family: "Montserrat", sans-serif
+      font-weight: 700
+      text-transform: uppercase
+      margin-bottom: 30px
+    .related_post
+      margin-bottom: 15px
+      width: 100%
+      float: left
+
+.related_post:hover .thumb
+  opacity: .5
+
+.thumb
+  max-height: 60px
+  max-width: 60px
+  display: inline-block
+  margin-right: 15px
+  float: left
+  -webkit-transition: all .2s ease-in-out
+  transition: all .2s ease-in-out
+
+.sidebar .widget .related_post
+  .post_title
+    font-size: 14px
+  .post_date
+    font-size: 12px
+
+.thumb:hover
+  opacity: .5
+
+// /*pagination
+
+.blog_pagination
+  width: 100%
+  text-align: center
+  float: left
+  .page
+    font-family: "Montserrat", sans-serif
+    font-weight: 700
+    font-size: 12px
+    text-transform: uppercase
+    display: inline-block
+    span
+      display: inline-block
+      padding: 0 20px
+    i
+      -webkit-transition: all .2s ease-in-out
+      transition: all .2s ease-in-out
+    &:hover i
+      &.prev
+        color: #1abc9c
+        display: inline-block
+        -webkit-transform: translateX(10px)
+        -ms-transform: translateX(10px)
+        transform: translateX(10px)
+      &.next
+        color: #1abc9c
+        display: inline-block
+        -webkit-transform: translateX(-10px)
+        -ms-transform: translateX(-10px)
+        transform: translateX(-10px)
+
+.white-txt
+  color: #fff
+
+.overlay
+  background-color: rgba(0, 0, 0, 0.6)
+  background-attachment: fixed
+
+
+
+// /* Background Video
+
+.background-video, .background-video1
+  position: absolute
+  bottom: 0
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+@media (min-aspect-ratio: 16 / 10)
+  .background-video
+    height: 340%
+    top: -120%
+  .site-hero_1
+    background: #fff url("../images/site-hero-1.jpg") no-repeat
+    background-size: cover
+  .site-hero_2
+    background: #fff url("../images/site-hero-2.jpg") no-repeat
+    background-size: cover
+  .site-hero_3
+    background: #fff url("../images/site-hero-3.jpg") no-repeat
+    background-size: cover
+  .site-hero_4
+    background: #fff url("../images/site-hero-4.jpg") no-repeat
+    background-size: cover
+  .site-hero_5
+    background: #fff url("../images/site-hero-5.jpg") no-repeat
+    background-size: cover
+  .site-hero_6
+    background: #fff url("../images/site-hero-6.jpg") no-repeat
+    background-size: cover
+
+@media (max-aspect-ratio: 16 / 9)
+  .background-video
+    width: 100%
+    top: -15%
+    left: -254%
+  .site-hero
+    background: #fff url("../images/site-hero.jpg") no-repeat
+    background-size: cover
+  .site-hero_1
+    background: #fff url("../images/site-hero-1.jpg") no-repeat
+    background-size: cover
+  .site-hero_2
+    background: #fff url("../images/site-hero-2.jpg") no-repeat
+    background-size: cover
+  .site-hero_3
+    background: #fff url("../images/site-hero-3.jpg") no-repeat
+    background-size: cover
+  .site-hero_4
+    background: #fff url("../images/site-hero-4.jpg") no-repeat
+    background-size: cover
+  .site-hero_5
+    background: #fff url("../images/site-hero-5.jpg") no-repeat
+    background-size: cover
+  .site-hero_6
+    background: #fff url("../images/site-hero-6.jpg") no-repeat
+    background-size: cover
+
+.highlighter
+  background-color: rgba(191, 202, 14, 1)
+  &:hover
+    background-color: rgba(260, 260, 260, 1)
+
+.slides h3
+  color: #fff
+  line-height: 1.5em
+  padding: 0% 25%
+
+.txt-shadow
+  text-shadow: 0px 0px 9px rgba(43, 46, 0, 0.27)
+
+.btn
+  margin-top: 30px
+  padding: 0px 10px
+
+.white-text a
+  color: #fff
+
+.dark-text
+  color: #333333
+  &:hover
+    color: #1abc9c
+
+.crt-parallaxvideo video
+  min-width: 100%
+  position: fixed
+  z-index: -100
+
+.contact-us, .pricing_plans, .about-us
+  margin-top: 300px
+  background: none repeat scroll 0 0 #fff
+  z-index: 100
+  padding: 40px 0 130px 0
+
+@media (max-width: 1024px)
+  .vm_popup
+    padding: 30px 80px
+    margin-left: 26%
+
+@media (max-width: 991px)
+  .slides h3
+    padding: 0% 5%
+    font-size: 90%
+  #map
+    max-height: 300px
+  .site-hero .big-title
+    font-size: 14px
+    color: #1abc9c
+    padding: 10px 40px
+    border: solid 2px #fff
+    display: inline-block
+    margin: 0px 5px 30px 5px
+  .vm_popup
+    padding: 30px 50px
+    margin-left: 18%
+    margin-top: 15%
+
+@media (max-width: 668px)
+  .vm_popup
+    padding: 30px 61px
+    margin-left: 13%
+
+@media (max-width: 737px) and (min-width: 665px)
+  .vm_loginbg
+    background-color: rgba(0, 0, 0, 0.7)
+    background-attachment: fixed
+    width: 100%
+    height: 100%
+    position: fixed
+    overflow: auto
+    z-index: 1000000
+
+  .vm_loginbg h2
+    margin-top: -23px
+    margin-bottom: 9px
+    padding-top: 20px
+    font-size: 30px
+    margin-left: -25px
+
+  .close 
+    margin-top: 7px
+    margin-right: -21px
+
+  .vm_popup
+    padding: 0px 38px
+    margin-top: 7%
+    min-width: 500px
+    width: 100px
+    background-color: white
+    margin-left: 16%
+    border-radius: 10px
+
+  .form-control
+    height: 33px
+    padding: 8px 16px !important
+    border: 2px solid #ccc
+    margin-left: 14px
+    width: 95%
+    margin-bottom: 7px
+
+  .vm_loginbg .btn 
+    height: 32px
+    line-height: 33px
+
+  .vm_loginbg p 
+    line-height: 18px
+
+  .vm_remember
+    float: left
+    color: #333
+
+  .vm_forgot
+    float: right
+    color: #333
+
+  .vm_loginbtn
+    width: 95%!important
+    margin: 8px 22px 0px 15px!important
+
+  .vm_fbbtn
+    margin: 5px!important
+    background: #3b5998!important
+
+  .vm_googlebtn
+    margin: 5px!important
+    background: #ea4335!important
+
+  .vm_signupbtn
+    width: 100%!important
+    margin: 5px 0!important
+
+@media (max-width: 665px) and (min-width: 565px)
+  .vm_loginbg
+    background-color: rgba(0, 0, 0, 0.7)
+    background-attachment: fixed
+    width: 100%
+    height: 100%
+    position: fixed
+    overflow: auto
+    z-index: 1000000
+
+  .vm_loginbg h2
+    margin-top: -33px
+    padding-top: 10px
+    margin-bottom: 9px
+    font-size: 25px
+    margin-left: -25px
+ 
+  .close 
+    margin-top: 5px
+    margin-right: -18px
+
+  .vm_popup
+    padding: 0px 38px
+    margin-top: 7%
+    min-width: 500px
+    width: 100px
+    background-color: white
+    margin-left: 6%
+    border-radius: 10px
+
+  .form-control
+    height: 33px
+    padding: 8px 16px !important
+    border: 2px solid #ccc
+    margin-left: 14px
+    width: 95%
+    margin-bottom: 7px
+
+  .vm_loginbg .btn 
+    height: 32px
+    line-height: 33px
+
+  .vm_loginbg p 
+    line-height: 18px
+
+  .vm_remember
+    float: left
+    color: #333
+
+  .vm_forgot
+    float: right
+    color: #333
+
+  .vm_loginbtn
+    width: 95%!important
+    margin: 0px 22px 0px 15px!important
+
+  .vm_fbbtn
+    margin: 5px!important
+    background: #3b5998!important
+
+  .vm_googlebtn
+    margin: 5px!important
+    background: #ea4335!important
+
+  .vm_signupbtn
+    width: 100%!important
+    margin: 5px 0!important
+
+@media (max-width: 480px)
+  .vm_popup
+    padding: 16px 87px
+    margin-left: -15%
+  .small-title
+    font-size: 12px
+  .site-hero_4 .page-title
+    .big-title
+      font-size: 22px
+    .small-title
+      font-size: 12px
+  .services p
+    font-size: 14px
+    font-family: "Open sans", sans-serif
+    color: #999999
+    line-height: 30px
+  #application p, span
+    text-align: left
+  #application p
+    font-size: 14px
+    line-height: 18px
+  ul.list li
+    font-size: 14px
+  
+ul
+  li
+    a
+      cursor: pointer
+
+.flex-active-slide
+  z-index: 10000000  
+
+#fh5co-header
+  position: absolute
+  top: 20px
+  left: 0
+  z-index: 999
+  background: transparent
+  padding: 15px 0
+  width: 100%
+  #fh5co-logo
+    float: left
+    cursor: pointer
+    line-height: 1.2
+    position: relative
+    a
+      font-family: "Roboto Slab", sans-serif
+      font-size: 30px
+      color: #fff
+      span
+        color: #f9ad81
+  #fh5co-main-nav
+    float: right
+    ul
+      padding: 0
+      margin: 15px 0 0 0
+      li
+        padding: 0
+        margin: 0
+        display: inline
+        a
+          font-family: "Roboto Slab", sans-serif
+          color: rgba(255, 255, 255, 0.86)
+          text-decoration: none
+          margin-left: 20px
+          font-size: 18px
+          font-weight: 700
+          border-bottom: 2px solid transparent
+          &:hover
+            text-decoration: none
+            color: #f9ad81
+        &.active a
+          color: #fff
+          border-bottom: 2px solid #f9ad81
+  &.navbar-fixed-top
+    position: fixed !important
+    background: rgba(51, 51, 51, 0.94)
+    -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1)
+    -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1)
+    top: 0
+    left: 0px
+    #fh5co-logo
+      float: left
+      line-height: 1.2
+      a
+        font-family: "Roboto Slab", sans-serif
+        font-size: 30px
+        color: #000
+    #fh5co-main-nav ul li
+      a
+        font-family: "Roboto Slab", sans-serif
+        color: rgba(255, 255, 255, 0.86)
+        text-decoration: none
+        margin-left: 20px
+        font-size: 18px
+        font-weight: 700
+        border-bottom: 2px solid transparent
+        &:hover
+          text-decoration: none
+          color: #1abc9c
+      &.active a
+        color: #1abc9c
+        border-bottom: 2px solid transparent
+
+@media (max-width: 436px)
+  .vm_popup
+    padding: 30px 65px;
+    margin-left: -7%;
+
+@media (max-width: 415px)
+  .vm_popup
+    padding: 30px 79px;
+    margin-left: -10%;
+
+@media (max-width: 376px)
+  .vm_popup
+    padding: 30px 87px;
+    margin-left: -16%;
+
+@media (max-width: 361px)
+  .vm_popup
+    padding: 30px 87px;
+    margin-left: -20%;
+
+@media (max-width: 320px)
+  .vm_popup
+    padding: 30px 107px;
+    margin-left: -27%;
+
+@media screen and (max-width: 768px)
+  #fh5co-header
+    top: 0
+  .social-icons
+    float: none
+    text-align: center
+
+@media screen and (max-width: 768px)
+  #fh5co-header #fh5co-logo
+    top: -2px
+
+@media screen and (max-width: 768px)
+  #fh5co-header #fh5co-logo a
+    color: #000
+
+@media screen and (max-width: 768px)
+  #fh5co-header #fh5co-main-nav
+    display: none
+
+.section-heading .fh5co-section-title
+  font-size: 11px
+  letter-spacing: 2px
+  text-transform: uppercase
+  color: #41454f
+  font-family: "Roboto", sans-serif
+  font-weight: 700
+  opacity: .4
+  margin-bottom: 20px
+
+.js
+  .to-animate, .to-animate-2, .animate-box
+    opacity: 0
+
+.fh5co-nav-toggle
+  width: 25px
+  height: 25px
+  cursor: pointer
+  text-decoration: none
+  &.active i
+    &::before, &::after
+      background: #f9ad81
+  &:hover, &:focus, &:active
+    outline: none
+    border-bottom: none !important
+  i
+    position: relative
+    display: -moz-inline-stack
+    display: inline-block
+    zoom: 1
+    *display: inline
+    width: 25px
+    height: 3px
+    color: #535659
+    font: bold 14px/.4 Helvetica
+    text-transform: uppercase
+    text-indent: -55px
+    background: #1abc9c
+    transition: all .2s ease-out
+    &::before, &::after
+      content: ''
+      width: 25px
+      height: 3px
+      background: #1abc9c
+      position: absolute
+      left: 0
+      -webkit-transition: 0.2s
+      -o-transition: 0.2s
+      transition: 0.2s
+    &::before
+      top: -7px
+    &::after
+      bottom: -7px
+  &:hover i
+    &::before
+      top: -10px
+    &::after
+      bottom: -10px
+  &.active i
+    background: transparent
+    &::before
+      top: 0
+      -webkit-transform: rotateZ(45deg)
+      -moz-transform: rotateZ(45deg)
+      -ms-transform: rotateZ(45deg)
+      -o-transform: rotateZ(45deg)
+      transform: rotateZ(45deg)
+    &::after
+      bottom: 0
+      -webkit-transform: rotateZ(-45deg)
+      -moz-transform: rotateZ(-45deg)
+      -ms-transform: rotateZ(-45deg)
+      -o-transform: rotateZ(-45deg)
+      transform: rotateZ(-45deg)
+  position: absolute
+  top: 8px
+  right: 15px
+  z-index: 21
+  padding: 6px 0 0 0
+  display: block
+  margin: 0 auto
+  display: none
+  height: 44px
+  width: 25px
+  border-bottom: none !important
+
+@media screen and (max-width: 768px)
+  .fh5co-nav-toggle
+    display: block
+  .offcanvas-visible .fh5co-nav-toggle
+    z-index: 999999 !important
+
+.fh5co-animated
+  -webkit-animation-duration: .3s
+  animation-duration: .3s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+.r-pb
+  padding-bottom: 40px
+
+@media screen and (max-width: 999px)
+  .vm-pricing
+    margin-top: 50px
+
+@media screen and (max-width: 480px)
+  .col-xxs-12
+    width: 100%
+    float: none
+
+
+#fh5co-main
+  -webkit-transition: 0.8s
+  -o-transition: 0.8s
+  transition: 0.8s
+
+#fh5co-offcanvas
+  -webkit-transition: 0.8s
+  -o-transition: 0.8s
+  transition: 0.8s
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  z-index: 9999
+  width: 275px
+  background: #1abc9c
+  overflow-y: auto
+  padding: 60px 30px 30px 30px
+  -moz-transform: translateX(275px)
+  -webkit-transform: translateX(275px)
+  -ms-transform: translateX(275px)
+  -o-transform: translateX(275px)
+  transform: translateX(275px)
+  .fh5co-offcanvas-close
+    position: absolute
+    top: 20px
+    right: 30px
+    &:before
+      font-family: 'Ionicons'
+      speak: none
+      font-style: normal
+      font-weight: normal
+      font-variant: normal
+      text-transform: none
+      line-height: 1
+      // /* Better Font Rendering ===========
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+      content: "\f12a"
+      font-size: 30px
+      color: rgba(255, 255, 255, 0.5)
+      -webkit-transition: 0.5s
+      -o-transition: 0.5s
+      transition: 0.5s
+    &:hover:before
+      color: white
+  nav ul
+    padding: 0
+    margin: 0
+    li
+      padding: 0
+      margin: 0
+      list-style: none
+      a
+        display: block
+        color: white
+        font-size: 13px
+        font-weight: 600
+        padding: 7px 0
+        &:hover
+          color: #000000
+      &.active a
+        color: #f9ad81
+
+.offcanvas-visible #fh5co-offcanvas
+  -moz-transform: translateX(0px)
+  -webkit-transform: translateX(0px)
+  -ms-transform: translateX(0px)
+  -o-transform: translateX(0px)
+  transform: translateX(0px)
+  
+#fh5co-header #fh5co-main-nav ul li a:hover
+    color: #1abc9c
+
+// Toggle menu
+#menuToggle
+  display: block
+  position: relative
+  top: 15px
+  float: right
+  z-index: 1
+  -webkit-user-select: none
+  user-select: none
+  input
+    display: block
+    width: 40px
+    height: 32px
+    position: absolute
+    top: -7px
+    left: -5px
+    cursor: pointer
+    opacity: 0
+    // /* hide this
+    z-index: 2
+    // /* and place it over the hamburger
+    -webkit-touch-callout: none
+  span
+    display: block
+    width: 33px
+    height: 4px
+    margin-bottom: 5px
+    position: relative
+    background: #1abc9c
+    border-radius: 3px
+    z-index: 1
+    transform-origin: 4px 0px
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease
+    &:first-child
+      transform-origin: 0% 0%
+    &:nth-last-child(2)
+      transform-origin: 0% 100%
+  input:checked ~ span
+    opacity: 1
+    transform: rotate(45deg) translate(-2px, -1px)
+    background: #232323
+    &:nth-last-child(3)
+      opacity: 0
+      transform: rotate(0deg) scale(0.2, 0.2)
+    &:nth-last-child(2)
+      opacity: 1
+      transform: rotate(-45deg) translate(0, -1px)
+
+#menu
+  font-family: "Montserrat", sans-serif
+  position: absolute
+  width: 300px
+  height: 1084px
+  margin: -100px 0 0 -240px
+  padding: 50px
+  padding-top: 100px
+  text-align: left
+  background: #17bb9c
+  list-style-type: none
+  -webkit-font-smoothing: antialiased
+  transform-origin: 50% 0%
+  transform: translate(100%, 0%)
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)
+  li
+    padding: 10px 0
+    font-size: 18px
+    font-family: "Roboto Slab", sans-serif
+ul li a:hover
+  color: #000
+#menuToggle input:checked ~ ul
+  transform: scale(1, 1)
+  opacity: 1
+
+@media (min-width: 769px)
+  #menuToggle
+    display: none
+
+//**********************Added css for formly*******************//
+
+.form-group 
+  margin-bottom: 24px
+
+.error-messages
+  position: relative
+  opacity: 1
+  transition: .3s linear all
+
+.message
+  opacity: 1
+  transition: .3s linear all
+  font-size: .9em
+  position: absolute
+  width: 100%
+  color: #b94a48
+  margin-top: 2px
+
+.error-messages.ng-enter.ng-enter-active, .message.ng-enter.ng-enter-active
+  opacity: 1
+  top: 0
+
+.error-messages.ng-enter, .message.ng-enter
+  opacity: 0
+  top: -10px
+
+.error-messages.ng-leave, .message.ng-leave
+  opacity: 1
+  top: 0
+
+.error-messages.ng-leave-active, .message.ng-leave-active
+  opacity: 0
+  top: -10px
